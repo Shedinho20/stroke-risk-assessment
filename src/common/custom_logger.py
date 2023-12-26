@@ -21,7 +21,8 @@ class CustomLogger:
         if not self._initialized:
             self.logger = logging.getLogger(__name__)
             self.logger.setLevel(logging.INFO)
-            file_name = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+
+            file_name = "application.log"
             logs_path = os.path.join(os.getcwd(), "logs")
             os.makedirs(logs_path, exist_ok=True)
             log_file_path = os.path.join(logs_path, file_name)

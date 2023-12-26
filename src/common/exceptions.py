@@ -25,7 +25,7 @@ class CustomException(Exception):
     - error_message (str): A formatted error message including file name, line number, and error description.
     """
 
-    def __init__(self, error_message, exc_tb):
+    def __init__(self, exc_tb, error_message="Something wnet wrong"):
         super().__init__(error_message)
         self.error_message = error_message_detail(error_message, exc_tb)
 
