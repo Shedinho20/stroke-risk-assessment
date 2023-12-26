@@ -43,6 +43,7 @@ The dataset used in this project was obtained from <https://www.kaggle.com/>.
 ## Usage
 
 - Clone the repository: `git clone [repository URL]`
+- Create an environment with `python==3.11.0`
 - Install the necessary libraries: `pip install -r requirements.txt`
 - Run the Jupyter Notebook or Python script to execute the project.
 
